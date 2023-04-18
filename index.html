@@ -1,16 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decodificador</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>
+        <img
+          src="./assets/img/logo-a.svg"
+          alt="letra 'a' minúscula e na cor azul marinho"
+          class="letter-header"
+        />
+      </h1>
+    </header>
+
+    <main class="content-main">
+      <div class="container-insert-text">
+        <!-- <h2 class="secundary-title">Digite seu texto</h2>-->
+        <label for="get-text" class="secundary-title">Digite seu texto</label>
+        <textarea
+          name="get-text"
+          id="get-text"
+          cols="30"
+          rows="10"
+          class="textarea-insert-text"
+        ></textarea>
+        <p class="warning-paragraph">
+          <img src="./assets/img/information.svg" alt="" /> Apenas letras
+          minúsculas e sem acento.
+        </p>
+        <div class="container-main-buttons">
+          <button class="encrypt-button" id="text-to-encrypt">
+            Criptografar
+          </button>
+          <!--<input type="reset" value="Limpar" class="encrypt-button reset-btn" id="reset-btn">-->
+          <button class="decrypt-button" id="decrypt-btn">
+            Descriptografar
+          </button>
+        </div>
+      </div>
+      <div class="container-no-message" id="no-message">
+        <img
+          src="./assets/img/girl.svg"
+          alt="O desenho de uma menina ajoelhada olhando através de uma lupa enquanto um diamante médio e pontos azuis marinhos flutuam ao seu redor."
+          class="img-girl"
+        />
+        <p class="primary-paragraph">Nenhuma mensagem encontrada</p>
+        <p class="secundary-paragraph">
+          Digite um texto que você deseja criptografar ou descriptografar.
+        </p>
+      </div>
+      <div class="container-encrypted-message" id="show-container">
+        <textarea
+          name="encrypted-message-result"
+          id="encrypted-message-result"
+          cols="30"
+          rows="10"
+          class="textarea-encrypted-message"
+          readonly
+        ></textarea>
+        <div class="container-btn-copy">
+          <button class="btn-copy" id="copy-btn">Copiar</button>
+          <input
+            type="reset"
+            value="Limpar"
+            class="encrypt-button"
+            id="reset-btn"
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      feito com &#x1F49C; por
+      <a href="https://github.com/NataliTrindade" target="_blank"
+        >Natalí Trindade</a
+      >
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
